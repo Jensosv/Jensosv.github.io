@@ -4,77 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to my Site</title>
+    <title>Welcome to my Site - SoftDev</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-      .fstPage  {
-          background-image:url("https://lawrencecheng123.github.io/Seattle.jpg");
-          /*background-color: lightgray;*/
-          height: 700px;
-          width:100%;
-          background-size:cover;
+      @import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+
+      body {
+        
+        padding: 0%;
+        margin: 0%;
       }
+
+      .so {
+        font-family: 'Sigmar One', cursive;
+      }
+      
+      .deepimgdiv {
+        background-color: rgba(0,0,0,0.8);
+        width: 100%;
+        height: auto;
+        filter:brightness(0.5);
+        background-size:cover;
+      }
+
+      .tex-block-one {
+      text-shadow: black;
+      }
+      
+
     </style>
 </head>
 <body>
-    <nav class="blue">
+    <nav class="indigo">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"><i class="material-icons md-48">dashboard</i>Jensosv</a>
+          <a href="#!" class="brand-logo so">SoftDev</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#"><i class="material-icons md-36">code</i></a></li>
-            <li><a href="#"><i class="material-icons md-48">explicit</i></a></li>
-            <li><a href="#"><i class="material-icons md-36">business_center</i></a></li>
-            <li><a href="#"><i class="material-icons md-36 red-text">favorite</i></a></li>
-            <li><a href="#"><i class="material-icons md-36">help</i></a></li>
+            <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Code"><i class="material-icons md-36">code</i></a></li>
+            <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="ED"><i class="material-icons md-48">explicit</i></a></li>
+            <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Hagamos Negocios"><i class="material-icons md-36">business_center</i></a></li>
+            <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Valorame"><i class="material-icons md-36 red-text">favorite</i></a></li>
+            <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="¿Necesitas Ayuda?"><i class="material-icons md-36">help</i></a></li>
 
           </ul>
         </div>
       </nav>
 
-      <div class="container">
-        <div class="fstPage">
-          
-        </div>
-        <div class="row">
-
-          <div class="card col lg12">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="" src="img/wded.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Mr. Martínez<i class="material-icons right blue-text">info</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">¿Quien Soy?<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-
-          <div class="card col s4">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/ed.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-
-        </div>
+      <div class="row deepimgdiv">
+        <img src="img/wdedr.jpg" class="deepimg responsive-img" alt="img info">
       </div>
 
+      
+
+      <!--CONTAINER DIV-->
+      <div class="container">
+        
+        <div class="row tex-block-one">
+          <div class="">
+            <h3 class="so">Bienvenidos a mi sitio web</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam et obcaecati nostrum ipsam deserunt dolorem quod,
+              officiis maiores sit suscipit architecto veniam, accusamus necessitatibus labore tempore ipsa cupiditate corrupti quasi?
+            </p>
+          </div>
+        </div>
+
+        <!--START CARDS-->
+        <div class="row">
+
+          
+          <div class="col l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="responsive-img" src="img/wded.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">CONTACTAME<i class="material-icons right blue-text">email</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">CONTACTAME<i class="material-icons right">close</i></span>
+                <p>
+                  Si quieres hacer una reserva, tienes alguna sugerencia o simplemente quieres saludar, escríbeme a:
+                  <br>
+                  <br>
+                  <i class="material-icons left blue-text">email</i>eammartinez19@gmail.com
+                  <br>
+                  <br>
+                  <i class="material-icons left blue-text">phone</i>(+503) 76134252
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="responsive-img" src="img/ed.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">CONOCEME<i class="material-icons right blue-text">info</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">¿Quien Soy?<i class="material-icons right">close</i></span>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatem, esse nobis dignissimos consequatur minima, maxime molestiae 
+                  quam quasi dolorem tempore a vero sed, eos autem voluptates. Voluptatem, fugiat id.
+                  Here is some more information about this product that is only revealed once clicked on.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="responsive-img" src="img/wded.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Mr. Martínez<i class="material-icons right blue-text">info</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">¿Quien Soy?<i class="material-icons right">close</i></span>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptatem, esse nobis dignissimos consequatur minima, maxime molestiae 
+                  quam quasi dolorem tempore a vero sed, eos autem voluptates. Voluptatem, fugiat id.
+                  Here is some more information about this product that is only revealed once clicked on.
+                </p>
+              </div>
+            </div>
+          </div>
+            
+          
+        </div>
+        <!--START CARDS-->
+
+        
+      </div>
+      <!--END CONTAINER DIV-->
+
+      <footer class="page-footer indigo">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">SoftDev</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l5 offset-l1 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons md-36">linked</i>LinkedIn</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Copyright SoftDev
+          <a class="grey-text text-lighten-4 right" href="#!">Edwin Martínez</a>
+          </div>
+        </div>
+      </footer>
 
     <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.parallax').parallax();
+            $('.tooltipped').tooltip();
         });
     </script>
 </body>
