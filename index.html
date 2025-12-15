@@ -1,431 +1,402 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Edwin Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="icon" href="img/myico.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css" /> 
-    <link rel="stylesheet" href="css/slick.css" type="text/css" />   
-    <link rel="stylesheet" href="css/tooplate-simply-amazed.css" type="text/css" />
-    <link rel="stylesheet" href="css/myStyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin Martínez</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div id="outer">
-        <header class="header order-last" id="tm-header">
-            <nav class="navbar">
-                <div class="collapse navbar-collapse single-page-nav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-1"><span class="icn"><i class="fas fa-2x fa-id-card"></i></span> Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#work-experience"><span class="icn"><i class="fas fa-2x fa-laptop-code"></i></span> Mi Experiencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#study-experience"><span class="icn"><i class="fas fa-2x fa-graduation-cap"></i></span> Mi Estudio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#my-habilities"><span class="icn"><i class="fas fa-2x fa-project-diagram"></i></span>Mis Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-me"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contáctame</a>
-                        </li>
-                    </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand rounded" href="https://www.linkedin.com/in/edwinmart%C3%ADnez/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x linkedin-icon"></i>
+            </a>
+
+            <a class="navbar-brand rounded" href="https://github.com/Jensosv" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Conocimientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work-experience">Mi Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#study">Estudio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contáctame</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content position-relative">
+            <h1 class="page-title">
+                Hola, soy <span class="text-warning">Edwin Martínez</span>
+            </h1>
+
+            <h3 class="page-title mt-3">
+                Desarrollador <span id="typing-text" class="fw-semibold"></span>
+                <span class="typing-cursor fw-bold">|</span>
+            </h3>
+        </div>
+
+        <a href="#about" class="scroll-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- CONTENEDOR -->
+    <div class="container">
+
+        <!-- SOBRE MÍ -->
+        <section id="about" class="mt-4">
+            <h3 class="section-title">Sobre mí</h3>
+
+            <div class="row align-items-center g-4 mt-2">
+                <!-- Contactos -->
+                <div class="col-md-4 text-center">
+                    <img src="img/ed_martinez2.jpeg" alt="Edwin Antonio Martínez Cortez"
+                        class="img-fluid rounded-5 shadow-lg" style="height: 300px !important;" />
                 </div>
-            </nav>
-        </header>
-        
-        <button class="navbar-button collapsed" type="button">
-            <span class="menu_icon">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </span>
-        </button>
-        
-        <main id="content-box" class="order-first">
 
-            <div class="banner-section parallax-window div-info-area" data-parallax="scroll" data-image-src="img/apa.jpg" id="section-1">
-                <div class="container">
-                    <div class="item">
-                        <div class="bg-blue-transparent logo-fa my-image-div br-div">
-                            <img src="img/ed.jpg" alt="" class="my-image">
-                          
-                            <p class="my-personal-info mt-2">
-                                <i class="fas fa-user"></i>
-                                Edwin Antonio Martínez Cortez
-                            </p>
-                            <p class="my-personal-info">
-                                <i class="fas fa-envelope"></i>
-                                <a class="my-personal-info" href="mailto:eammartinez19@gmail.com">
-                                    eammartinez19@gmail.com
-                                </a>
-                            </p>
-                            <p class="my-personal-info">
-                                <i class="fas fa-mobile"></i>
-                                <a class="my-personal-info" href="tel:+503 69758576">
-                                    (+503) 69758576
-                                </a>
-                            </p>
+                <!-- Mi Info -->
+                <div class="col-md-8">
+                    <p>
+                        Soy <strong>Edwin Antonio Martínez Cortez</strong>, Técnico Ingeniero en Desarrollo de Software
+                        con 6 años de experiencia y sumando,
+                        tengo 28 años, soy de El Salvador. Me especializo en la creación de Aplicaciones Android y el
+                        Desarrollo Backend, con enfoque
+                        en la creación
+                        de
+                        soluciones eficientes, escalables y bien estructuradas.
+                    </p>
 
-                            <div>
-                                <a href="https://gitlab.com/Pochojenso" target="_blank"><i class="fab fa-gitlab" style="color: orangered;"></i></a>
-                                <a href="https://www.linkedin.com/in/edwinmart%C3%ADnez/" target="_blank"><i class="fab fa-linkedin" style="color: blue;"></i></a>
-                            </div>
-                            
-                        </div>
+                    <p>
+                        Cuento con experiencia en el análisis de requerimientos, diseño de lógica de negocio e
+                        integración de
+                        servicios, priorizando siempre el rendimiento, la seguridad y la calidad del código. Me
+                        caracterizo por
+                        ser una persona responsable, autodidacta y orientada a resultados, con interés constante en
+                        aprender
+                        nuevas tecnologías y mejorar mis habilidades profesionales.
+                    </p>
 
-                        <div class="bg-blue-transparent br-div info-bio">
-                            <p class="my-personal-info">
-                                Hola, Soy Edwin, Desarrollador Web con más de 3 años 
-                                de experiencia especializado en desarrollo back end. <br><br>
-                                
-                                Tengo conocimiento en tecnologías que incluye HTML5, CSS3, 
-                                BootstrapCSS, MaterializeCSS, JSON, PHP, JavaScript, JQuery, C#, MySQL y MS SQL Server.
-                                💻️ Actualmente trabajo como IT Banckend Developer.<br> 
-                                🌱 Estoy aprendiendo Inglés, para ser un mejor profesional.
-                            </p>
+                    <p class="mb-0">
+                        Estoy abierto a nuevos retos y proyectos que me permitan aportar valor, crecer como
+                        desarrollador y
+                        generar soluciones tecnológicas que marquen la diferencia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONOCIMIENTOS -->
+        <section id="skills" class="mt-4">
+            <h3 class="section-title">Conocimientos</h3>
+
+            <div class="row g-4 mt-2">
+
+                <div class="col-md-4">
+                    <div class="p-3 border rounded-3 h-100 android-container">
+                        <h6 class="fw-semibold">
+                            <i class="fa-brands fa-android fa-xl"></i>
+                            Desarrollo Android
+                        </h6>
+                        <ul class="mb-0">
+                            <li>Kotlin</li>
+                            <li>JAVA</li>
+                            <li>Jetpack Compose Básico</li>
+                            <li>Diseño XML</li>
+                            <li>MVVM / MVP</li>
+                            <li>Consumo APIs REST</li>
+                            <li>Publicación de apps en Play Store</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 border rounded-3 h-100 backend-container">
+                        <h6 class="fw-semibold">
+                            <i class="fa-solid fa-terminal fa-xl"></i>
+                            Desarrollo Backend
+                        </h6>
+                        <ul class="mb-0">
+                            <li>PHP</li>
+                            <li>C# Net Core</li>
+                            <li>C# Net Framework</li>
+                            <li>Node.js Básico</li>
+                            <li>Bases de datos</li>
+                            <li>APIs REST</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 border rounded-3 h-100 text-music fronted-container">
+                        <h6>
+                            <i class="fa-solid fa-laptop-code fa-xl"></i>
+                            Desarrollo Frontend
+                        </h6>
+                        <ul class="mb-0">
+                            <li>HTML5</li>
+                            <li>CSS3 / Bootstrap / MaterializeCSS</li>
+                            <li>JavaScript Vanilla</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="p-3 border rounded-3 h-100">
+                        <h6 class="fw-semibold">Herramientas</h6>
+
+                        <p class="text-center">Linux / Windows</p>
+                        <p class="text-center">Git / GitHub</p>
+                        <p class="text-center">Android Studio</p>
+                        <p class="text-center">Wordpress</p>
+                        <p class="text-center">MySQL</p>
+                        <p class="text-center">MS SQL SERVER</p>
+                        <p class="text-center">Postman / Insomnia</p>
+                        <p class="text-center">AWS</p>
+                        <p class="text-center">Office</p>
+
+                        <div class="col-md-12 gap-2 text-center">
+                            <i class="fa-brands fa-linux fa-2x text-dark"></i>
+                            <i class="fa-brands fa-windows fa-2x text-primary"></i>
+                            <i class="fa-brands fa-git-alt fa-2x text-danger"></i>
+                            <i class="fa-brands fa-github fa-2x text-dark"></i>
+                            <i class="fa-brands fa-android fa-2x text-success"></i>
+                            <i class="fa-brands fa-wordpress fa-2x text-primary"></i>
+                            <i class="fa-solid fa-database fa-2x text-primary"></i>
+                            <i class="fa-brands fa-aws fa-2x text-warning"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        
-            <section class="div-info-area" id="work-experience">
-                <div class="container">
-                    
-                    <div class="title">
-                        <h3 class="text-center text-dark">Mi Experiencia Laboral</h3>
-                    </div>
+        </section>
 
-                    <br><br>
+        <!-- EXPERIENCIA -->
+        <section id="work-experience" class="mt-4">
+            <h3 class="section-title">Experiencia Laboral</h3>
 
-                    <div class="row">
-                        <ul class="timeline-with-icons">
-                            <li class="timeline-item mb-5">
-                                <span class="timeline-icon">
-                                    <i class="fas fa-warehouse text-primary fa-sm fa-fw"></i>
-                                </span>
-                            
-                                <h5 class="fw-bold">Analista Programador Jr.</h5>
-                                <p class="text-muted mb-2 fw-bold">Filtros Carossi S.A. de C.V. | Noviembre 2019 - Diciembre 2021 <br>
-                                    Antiguo Cuscatlán, La Libertad, El Salvador.
-                                </p>
-                                <p class="text-muted">
-                                    Diseñar y programar los sistemas web, hacer las tareas asignadas dentro de la empresa,
-                                    dar mantenimiento a sistemas puestos en producción, dar soporte técnico 
-                                    a los compañeros de trabajo. Un año estuve presencial y debido a la pandemia empece a trabajar desde casa. 
-                                </p>
-                            </li>
-                        
-                            <li class="timeline-item mb-5">
-                        
-                                <span class="timeline-icon">
-                                    <i class="fas fa-rocket text-primary fa-sm fa-fw"></i>
-                                </span>
-                                <h5 class="fw-bold">Backend Developer</h5>
-                                <p class="text-muted mb-2 fw-bold">GlobalPay Solutions | Enero 2022 - Presente <br>
-                                    1000 Brickell Avenue, Suite 300 Miami, Florida 33131, United States.
-                                </p>
-                                <p class="text-muted">
-                                    Desarrollo de API's, correción de bugs, diseñar y programar los sistemas web, 
-                                    hacer las tareas asignadas dentro del equipo de IT. Trabajando desde casa.
-                                </p>
-                            </li>
-                        
-                            <li class="timeline-item mb-5">
-                                <span class="timeline-icon">
-                                    <i class="fas fa-comment-dots text-primary fa-sm fa-fw"></i>
-                                </span>
-                                <h5 class="fw-bold">...</h5>
-                            </li>
+            <div class="row g-4 mt-2">
+
+                <div class="col-md-12">
+                    <h3 class="fw-semibold text-center text-info mt-4">GlobalPay Solutions</h3>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="p-3 border rounded-3 h-100">
+                        <h4 class="fw-semibold text-success">Desarrollador Android</h4>
+
+                        <ul class="mb-0">
+                            <li>Febrero 2023 - Actualidad <span class="text-info">En remoto</span></li>
                         </ul>
-                    </div>
-                </div>
-            </section>
 
-            <section class="parallax-window div-info-area" data-parallax="scroll" data-image-src="img/fo.jpg" id="study-experience">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="main-timeline">
-                                <div class="timeline">
-                                    <a href="#!" class="timeline-content">
-                                        <div class="timeline-year">
-                                            2014
-                                            <hr>
-                                            2015
-                                        </div>
-                                        <div class="timeline-icon"><i class="fas fa-address-book"></i></div>
-                                        <h3 class="title">Bachillerato</h3>
-                                        <p class="description">
-                                            Instituto Nacional Licenciado<br>
-                                            José Daniel Carias<br>
-                                            Enero 2014 - Noviembre 2015<br>
-                                            Apaneca, Ahuachapán, El Salvador.
-                                        </p>
-                                        <br>
-                                        <p class="my-personal-info">
-                                            PAES: 7.61 <br>
-                                            Aprendizaje de materias escolares en general.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="timeline">
-                                    <a href="#!" class="timeline-content">
-                                        <div class="timeline-year">
-                                            2017
-                                            <hr>
-                                            2018
-                                        </div>
-                                        <div class="timeline-icon"><i class="fas fa-user-graduate"></i></div>
-                                        <h3 class="title">Desarrollo de Software</h3>
-                                        <p class="description">
-                                            Escuela Superior Franciscana Especializada<br>
-                                            Enero 2017 - Diciembre 2018<br>
-                                            Sonzacate, Sonsonate, El Salvador.
-                                        </p>
-                                        <br>
-                                        <p class="my-personal-info">
-                                            Estudié planeación de proyectos, coordinación en grupos, 
-                                            fases de desarrollo de software, aprendí sobre
-                                            desarrollo web y API's, bases de datos en MS SQL Server y MySQL.
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        <p class="mt-2">
+                            Encargado de crear las interfaces en base a prediseño, mantenimiento y desarrollo de apps y
+                            nuevas funcionalidades de las mismas, consumo de API's, publicación en la Play Store.
 
-            <section class="knowledge-section div-info-area" id="my-habilities">
-                <div class="container">
-                    
-                    <div class="title">
-                        <h3 class="text-center text-dark">Mis Habilidades</h3>
-                    </div>
+                            <br><br>
 
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="row">
-                                <h4 class="text-center">Profesionales</h4>
-                            </div>
-                            <div class="row br-div Sskill-div">
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML5">
-                                    <i class="fab fa-html5 fa-3x logo-color-orangered"></i>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS3">
-                                    <i class="fab fa-css3-alt fa-3x logo-color-blue"></i>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript">
-                                    <i class="fab fa-js-square fa-3x logo-color-yellow"></i>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
-                                    <i class="fab fa-php fa-3x logo-color-blue"></i>
-                                </div>
-
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Linux OS">
-                                    <i class="fab fa-linux fa-3x text-dark"></i>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Amazon Web Services">
-                                    <i class="fab fa-aws fa-3x text-warning"></i>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="GIT">
-                                    <i class="fab fa-git-alt fa-3x text-danger"></i>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Laravel">
-                                    <i class="fab fa-laravel fa-3x text-danger"></i>
-                                </div>
-
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Windows OS">
-                                    <i class="fab fa-windows fa-3x logo-color-skyblue"></i>
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="CSharp">
-                                    <img src="img/c-sharp-logo-2.svg" alt="C# Logo" class="Hskill-svg">
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Excel">
-                                    <img src="img/microsoft-excel-2019.svg" alt="Excel Logo" class="Hskill-svg">
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="Word">
-                                    <img src="img/microsoft-word-2019.svg" alt="Word Logo" class="Hskill-svg">
-                                </div>
-
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL">
-                                    <img src="img/mysql-logo.svg" alt="MySQL Logo" class="Hskill-svg">
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL Server">
-                                    <img src="img/microsoft-sql-server-logo.svg" alt="SQL Server Logo" class="Hskill-svg">
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="JSON">
-                                    <img src="img/json-file.svg" alt="JSON Logo" class="Hskill-svg">
-                                </div>
-                                <div class="col-6 col-sm-6 col-md-3 col-lg-3 text-center i-hover" data-bs-toggle="tooltip" data-bs-placement="top" title="PowerPoint">
-                                    <img src="img/microsoft-powerpoint-2019.svg" alt="PowerPoint Logo" class="Hskill-svg">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                            <div class="row">
-                                <h4 class="text-center">Personales</h4>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <i class="fas fa-people-carry text-primary"></i> Compañerismo
-                                </div>
-                                <div class="col-sm-6">
-                                    <i class="fas fa-user-tie text-primary"></i> Responsable
-                                </div>
-                            </div>
-
+                            Otros:
                             <br>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <i class="fas fa-user-shield text-primary"></i> Respetuoso
-                                </div>
-                                <div class="col-sm-6">
-                                    <i class="fas fa-user-plus text-primary"></i> Positivo
-                                </div>
-                            </div>
-
+                            Creación de Apps de consola en Net Core con C#.
                             <br>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <i class="fas fa-user-clock text-primary"></i> Puntual
-                                </div>
-                                <div class="col-sm-6">
-                                    <i class="fas fa-user-ninja text-primary"></i> Alegre
-                                </div>
-                            </div>
-
-                            <br>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <i class="fas fa-box-open text-primary"></i> Fácil Aprendizaje
-                                </div>
-                            </div>
-                        </div>
-
-                        <br>
-                        <br>
-
-                        <div class="title">
-                            <h3 class="text-center text-dark">Pasatiempos</h3>
-                        </div>
-
-                        <div class="row">
-                            <p class="my-personal-info">
-                                Me encanta la música, escucho de varios géneros. Me encanta, jugar al fútbol, jugar videojuegos FPS en linea, ver series con mi esposa. 
-                                Me gusta leer sobre las tecnologías que manejo, esto me mantiene fresco para el entorno de trabajo, y paso buenos ratos riéndome con los memes.
-                            </p>
-                        </div>
-                       
-                        <div class="row">
-                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center br-div pt-3 div-p">
-                                <i class="fas fa-headphones fa-3x text-music"></i><br>
-                                <p class="text-music">Música</p>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center br-div pt-3 div-p">
-                                <i class="fas fa-laptop fa-3x text-laptop"></i><br>
-                                <p class="text-laptop">Jugar</p>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center br-div pt-3 div-p">
-                                <i class="fas fa-mobile fa-3x text-mobile"></i><br>
-                                <p class="text-mobile">Memes</p>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center br-div pt-3 div-p">
-                                <i class="fas fa-tv fa-3x text-tv"></i><br>
-                                <p class="text-tv">TV</p>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center br-div pt-3 div-p">
-                                <i class="fas fa-futbol fa-3x text-futbol"></i><br>
-                                <p class="text-futbol">Fútbol</p>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 text-center br-div pt-3 div-p">
-                                <i class="fas fa-book fa-3x text-book"></i><br>
-                                <p class="text-book">Leer</p>
-                            </div>
-                        </div>
-                    </div>           
+                            Integraciónes en sitios Wordpress.
+                        </p>
+                    </div>
                 </div>
-            </section>
 
-            <section class="contact-section div-info-area" id="contact-me">
-                <div class="container">
-                    <div class="title">
-                        <h3 class="text-center">Contáctame</h3>
+                <div class="col-md-12">
+                    <div class="p-3 border rounded-3 h-100">
+                        <h4 class="fw-semibold text-dark">Desarrollador Backend</h4>
+
+                        <ul class="mb-0">
+                            <li>Enero 2022 - Enero 2023 <span class="text-info">En remoto</span></li>
+                        </ul>
+
+                        <p class="mt-2">
+                            Encargado de Integraciones a nivel de Backend de los sistemas existentes, creación de nuevas
+                            funcionalidades, nuevos sistemas y desarrollo de API REST.
+                            <br><br>
+                            Desarrollo y modificación de sitios web ASP.NET y HTML, validaciones con jQuery,
+                            funcionalidades con JavaScript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-12">
+                    <h3 class="fw-semibold text-center text-info mt-4">Filtros Carossi S.A. de C.V.</h3>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="p-3 border rounded-3 h-100">
+                        <h4 class="fw-semibold text-dark">Analista Programador</h4>
+
+                        <ul class="mb-0">
+                            <li>Noviembre 2019 - Diciembre 2021 <span class="text-info">Primer año presencial luego en
+                                    remoto</span></li>
+                        </ul>
+
+                        <p class="mt-2">
+                            Desarrollo de software en PHP, frameworks Laravel y Codeigniter 3, frontend con Bootstrap y
+                            Material
+                            Desing, funcionalidades en Google Maps con Javascript.
+                            <br><br>
+                            Integrar funcionalidades de AWS como AWS Code Commit, S3, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTUDIO -->
+        <section id="study" class="mt-4">
+            <h3 class="section-title">Estudio</h3>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-12">
+                    <div class="p-3 border rounded-3 h-100 text-center">
+                        <h3 class="fw-semibold text-warning">Técnico Ingeniero en Desarrollo de Software</h3>
+
+                        <p>
+                            Escuela Superior Franciscana Especializada
+                            <br>
+                            Enero 2017 - Diciembre 2018
+                            <br>
+                            Sonzacate, Sonsonate, El Salvador.
+                            <br>
+                            Estudié planeación de proyectos, coordinación en grupos,
+                            fases de desarrollo de software, aprendí sobre
+                            desarrollo web y API's, bases de datos en MS SQL Server y MySQL.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="projects" class="mt-4">
+            <h3 class="section-title">Proyectos</h3>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 h-100">
+                        <h6 class="fw-semibold text-info"><a href="https://github.com/Jensosv/ado.net-mysql-connection"
+                                class="nav-link" target="_blank">Emisor de correos gmail</a></h6>
+                        <p class="small text-muted">
+                            Proyecto Net Core 8, Conexión a MYSQL con ADO.NET y envío de correo gmail a correos gmail.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 h-100">
+                        <h6 class="fw-semibold">Sistema Administrativo</h6>
+                        <p class="small text-muted">
+                            Gestión de usuarios, roles y reportes usando Bootstrap.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 h-100">
+                        <h6 class="fw-semibold">Landing Page</h6>
+                        <p class="small text-muted">
+                            Sitio corporativo optimizado para móviles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact" class="mt-4">
+            <h3 class="section-title">Contáctame</h3>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <p>
+                        Si quieres tener una charla, tienes algún proyecto en mente, alguna pregunta, sugerencia o
+                        simplemente quieres
+                        saludar...
+                    </p>
+
+                    <div class="mt-3 d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:eammartinez19@gmail.com">
+                            eammartinez19@gmail.com
+                        </a>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 mb-4 contact-form br-div">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15494.424191581842!2d-89.81032423286364!3d13.862670177206335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62bc4dd3b16a35%3A0x56b4e32c32558b0a!2sApanhecat!5e0!3m2!1ses-419!2ssv!4v1658295771633!5m2!1ses-419!2ssv" width="100%" height="450" style="border:0;border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <!-- <div class="form tm-contact-item-inner">
-                                <form action="#">
-                                    <div class="form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Nombre" autocomplete="off">
-                                    </div>
-                                    <div class="form-group">
-                                        <input name="email" type="text" class="form-control" placeholder="Correo" autocomplete="off">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="message" class="textarea form-control" placeholder="Mensaje" autocomplete="off"></textarea>
-                                    </div>
-                                    <div class="form-group text-right">
-                                        <input type="submit" class="btn btn-primary br-div" value="Enviar">
-                                    </div>
-                                </form>
-                            </div> -->
-                        </div>
-                        <div class="col-lg-6 col-md-6 mb-4 contact-details">
-                            <div class="tm-contact-item-inner-2">
-                                <p>Si quieres tener una charla, tienes alguna pregunta, sugerencia o simplemente quieres saludar...</p>
-                                <ul class="font-weight-light">
-                                    <li>
-                                        <span class="icn"><i class="fas fa-at text-white"></i></span>
-                                        
-                                        <a href="mailto:eammartinez19@gmail.com">
-                                            eammartinez19@gmail.com
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="icn"><i class="fas fa-mobile-alt text-white"></i></span>
-                                        <a href="tel:+503 69758576">
-                                            (+503) 69758576
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span class="icn"><i class="fas fa-home text-white"></i></span> <span>Apaneca, Ahuachapán, El Salvador.</span>
-                                    </li>
-                                </ul>
-                            </div>                        
-                        </div>
-                    </div>                
-                </div>
-                
-                <hr>
-
-                <footer class="footer container container-2">
-                    <div class="row"> 
-                        <p class="col-sm-12 text-center">Copyright 2022 Edwin Martínez.</p>
-                        <p class="col-sm-5 text-right design"></p>
+                    <div class="mt-3 d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-mobile-button" style="color: #63E6BE;"></i>
+                        <a href="tel:+50369758576">
+                            (+503) 6975-8576
+                        </a>
                     </div>
-                </footer>
-            </section>
-        </main>
+
+                    <div class="mt-3 d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-location-dot" style="color: #B197FC;"></i>
+                        <span>Apaneca, Ahuachapán, El Salvador.</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15494.424191581842!2d-89.81032423286364!3d13.862670177206335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62bc4dd3b16a35%3A0x56b4e32c32558b0a!2sApanhecat!5e0!3m2!1ses-419!2ssv!4v1658295771633!5m2!1ses-419!2ssv"
+                        width="100%" height="350" style="border:0;border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="https://www.linkedin.com/in/edwinmart%C3%ADnez/"
+                    class="nav-link px-2 text-body-secondary" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-2x linkedin-icon"></i></a></li>
+            <li class="nav-item"><a href="https://github.com/Jensosv" class="nav-link px-2 text-body-secondary"
+                    target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© <span id="current-year"></span> Edwin Martínez</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/functions.js"></script>
 </body>
+
 </html>
